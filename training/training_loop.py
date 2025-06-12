@@ -73,7 +73,7 @@ def create_model(dataset_name=None, guidance_type=None, guidance_rate=None, devi
     
 
     if dataset_name in ['celeba-hq']:
-        config_path = OmegaConf.load('./models/p2_weighing/configs/celebahq.yml')
+        config_path = OmegaConf.load('./configs/celebahq.yml')
         model_path = config_path.ckpt_path
         dist.print0(f'Loading the pre-trained p2-weighing model from "{model_path}"...')
         from models.networks_edm import P2Precond
