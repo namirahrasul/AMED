@@ -29,7 +29,9 @@ packages = [
     "numpy<2",
     "tensorboard",
     "lmdb",
-    "omegaconf"
+    "omegaconf",
+    "click",
+    "einops"
 ]
 
 for package in packages:
